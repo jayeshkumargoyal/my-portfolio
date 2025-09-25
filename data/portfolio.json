@@ -1,0 +1,469 @@
+{
+  "// ===== SITE METADATA ===== //": "",
+  "meta": {
+    "title": "Jayesh Kumar Goyal | Portfolio",
+    "description": "AI focused software engineer delivering real products. Blends full stack craft with practical machine learning and clear, user centered design.",
+    "keywords": "Software Engineer, AI, Machine Learning, Reinforcement Learning, Full stack, FastAPI, React, RAG, LangChain, LangGraph, PyTorch, SQL, MongoDB, OpenCV, University of Alberta, PMAssistant.ai, Amii",
+    "author": "Jayesh Kumar Goyal",
+    "url": "https://jayeshkumargoyal.com",
+    "image": "/og-image.svg"
+  },
+
+  "// ===== PERSONAL INFORMATION ===== //": "",
+  "profile": {
+    "name": "Jayesh Kumar Goyal",
+    "role": "University of Alberta",
+    "bio": "I create software and AI/ML solutions with a focus on clarity, reliability, and real user impact. From idea to iteration, I ship working products, test what matters, and refine with feedback.",
+    "location": "Edmonton, AB",
+    "email": "kumarjayesh012@gmail.com",
+    "phone": "+1 (825) 889-8101",
+    "social": {
+      "github": "https://github.com/jayeshkumargoyal",
+      "linkedin": "https://linkedin.com/in/jayeshkumargoyal"
+    },
+    "avatar": "/images/avatar.jpg"
+  },
+
+  "// ===== PROFESSIONAL EXPERIENCE ===== //": "",
+  "timeline": [
+    {
+      "title": "Software Engineer Intern",
+      "organization": "PMassistant.ai",
+      "period": "May 2025 - Present",
+      "shortDescription": "Building AI-powered project management features with FastAPI and GenAI pipelines.",
+      "description": "Built AI powered project management features by integrating FastAPI services with GenAI pipelines using LangGraph, Vertex AI, and RAG, deployed as Dockerized services on Google Cloud Platform.",
+      "highlights": [
+        "Implemented FastAPI services and integrated with the WordPress site via REST/webhooks and React widgets, reducing duplicate task updates and manual PM steps by 35%.",
+        "Designed GenAI pipelines (OpenAI API, Vertex AI) using LangGraph + RAG with ChromaDB, improving retrieval quality for project docs and supporting 1,000+ automated queries.",
+        "Contributed to containerization with Docker and CI/CD on GCP, adding staged checks and release gating,increasing pre-release success by 20% across iterations."
+      ],
+      "featured": true
+    },
+    {
+      "title": "Machine Learning Research Assistant",
+      "organization": "University of Alberta",
+      "period": "Aug. 2025 - Present",
+      "shortDescription": "Developing RL agents and game mods for colony task efficiency research.",
+      "description": "Built RL agents in Python (Pytorch) and a C# RimWorld game mod that streams real time gameplay events, improving colony task efficiency and enabling controlled evaluations with SwiftTD algorithm.",
+      "highlights": [
+        "Developed Reinforcement Learning agents in Python (PyTorch) and a C# .NET RimWorld game mod that streamed real-time gameplay event data to enhance colony task efficiency.",
+        "Trained and evaluated RL agents under Vanilla and Free Will survival policies in a standardized resource-stress testbed, applied the SwiftTD algorithm to refine behavior.",
+        "Analyzed agent–environment logs to identify mood drivers and performed baseline comparisons, controlled experiments, and error analyses with NumPy/Matplotlib to prepare a conference-style research paper draft."
+      ],
+      "featured": true
+    },
+    {
+      "title": "Teaching Assistant",
+      "organization": "University of Alberta",
+      "period": "Jan. 2025 - May 2025",
+      "shortDescription": "Teaching and mentoring students in Python, testing, and code quality.",
+      "description": "Created responsive websites and web applications for various clients, focusing on performance and user experience.",
+      "highlights": [
+        "Led labs and tutorials for 500+ students, improving student lab performance through academic support.",
+        "Automated grading with Python, Bash, and PyTest, reducing evaluation time by 40% while ensuringconsistency, mentored students on testing and code quality."
+      ],
+      "featured": false
+    },
+    {
+      "title": "Academic Tutor",
+      "organization": "University of Alberta Students' Union",
+      "period": "Feb. 2024 - Apr. 2025",
+      "shortDescription": "Teaching and mentoring students in CMPUT, Math, and Stat through one-to-one support.",
+      "description": "Provided personalized tutoring for CMPUT, Math, and Stat courses, creating study plans, practice sets, and review sessions that helped students improve outcomes.",
+      "highlights": [
+        "Delivered 100+ hours of one-to-one tutoring across CMPUT, MATH, and STAT.",
+        "Created individualized study plans and weekly checkpoints, boosting grades by ~30%.",
+        "Developed practice problems, Python notebooks, and solution walkthroughs for core topics.",
+        "Coached students on debugging, testing, and code quality to strengthen fundamentals.",
+        "Tracked progress with shared notes and spreadsheets to keep sessions focused and effective."
+      ],
+      "featured": false
+    }
+  ],
+
+  "// ===== VOLUNTEER EXPERIENCE ===== //": "",
+  "volunteer": [
+    {
+      "title": "Upper Bound Conference 2025",
+      "organization": "Artificial Machine Intelligence Institute (Amii)",
+      "period": "May 20, 2025 - May 23, 2025",
+      "highlights": [
+        "Supported a major AI conference hosting ~6,000 attendees and over 200 sessions.",
+        "Assisted conference logistics: registration, way-finding, headphones, session staffing, speaker support.",
+        "Facilitated attendee experience at Edmonton Convention Centre."
+      ]
+    },
+    {
+      "title": "'Root for Trees' Planting",
+      "organization": "City of Edmonton",
+      "period": "May 30, 2025",
+      "highlights": [
+        "Planted native trees in urban parks to support Edmonton’s urban forest initiative.",
+        "Ensured safe, effective planting at drop-in and group events.",
+        "Contributed to city-wide biodiversity goal (~45 000 plantings/year)."
+      ]
+    }
+  ],
+
+  "// ===== PROJECTS & WORK ===== //": "",
+  "projects": [
+    {
+      "id": "financial-institution-simulator",
+      "title": "Wealth.io",
+      "shortDescription": "Unified banking hub to view and manage accounts from multiple institutions",
+      "longDescription": "Wealth.io is a branded showcase app that solves the pain of switching between different banking apps by bringing balances, transactions, and profile details into a single clean dashboard. It includes KYC style onboarding, secure authentication, and a consolidated view of mock multi bank data for learning and demos. Built with the Next.js app router, TypeScript, Tailwind, and shadcn ui, and deployed on Vercel with Sentry for observability.",
+      "role": "#Lead Developer",
+      "year": "2025",
+      "tags": ["ReactJS", "Node.js", "Express", "Tailwind CSS", "SQL", "REST APIs", "Plaid", "Sentry", "Dwolla", "APIs"],
+      "coverImage": "/images/projects/wealth.io-cover2.png",
+      "links": {
+        "live": "https://financial-instituion-simulator.vercel.app/",
+        "github": "https://github.com/jayeshkumargoyal/financial-instituion-simulator"
+      },
+      "featured": true
+    },
+    {
+      "id": "drivesafe",
+      "title": "DriveSafe",
+      "shortDescription": "Driver alertness monitoring app using EEG signals and facial analysis",
+      "longDescription": "DriveSafe unifies neurotech and computer vision to detect drowsiness and keep drivers safe. A Muse S headset streams EEG data to estimate concentration and fatigue while OpenCV tracks facial landmarks to catch eye closure and yawning. When alertness drops, the app issues instant voice prompts. Built with a React frontend and a Flask backend for low latency streaming, plus a weather API to factor external conditions. The project showcases an end to end safety pipeline from sensor ingestion to real time feedback.",
+      "role": "#natHACKS",
+      "year": "2024",
+      "tags": ["Python", "OpenCV", "Muse S", "SQL", "ReactJS", "Tailwind CSS", "APIs", "Flask"],
+      "coverImage": "/images/projects/drivesafe-cover3.png",
+      "links": {
+        "live": "https://devpost.com/software/nathacks",
+        "github": "https://github.com/TechSupport-Nathacks2024/natHACKS2024-Project"
+      },
+      "featured": true
+    },
+    {
+      "id": "crowdnav",
+      "title": "CrowdNav",
+      "shortDescription": "Live crowd analysis with optimal pathfinding between two different locations.",
+      "longDescription": "A computer vision app that converts live crowd recordings into weighted heatmaps and computes safer, faster routes between locations. Uses OpenCV for density estimation and Dijkstra’s algorithm for path selection, with a React front end and Python backend.",
+      "role": "#HackED",
+      "year": "2025",
+      "tags": ["Python", "OpenCV", "Scikit", "Dijkstra’s Algorithm", "Numpy", "Scikit", "Flask", "ReactJS"],
+      "coverImage": "/images/projects/crowdnav-cover.png",
+      "links": {
+        "live": "https://devpost.com/software/crowdnav",
+        "github": "https://github.com/certified-compiler-boys/HackED2025"
+      },
+      "featured": false
+    },
+    {
+      "id": "donotredeem",
+      "title": "Feelin'",
+      "shortDescription": "Android mood tracking app with offline mode, maps, and social sharing.",
+      "longDescription": "An Android app where users log mood events with time, emotion, triggers, social context, and optional location. Features include a reverse-chronological mood history, filters (by date range, emotion, and keyword), interactive map views, following other users (with permission), offline add/edit/delete with auto-sync, and basic mood analytics (calendar and graph).",
+      "role": "#Android Developer",
+      "year": "2025",
+      "tags": ["Android", "Java", "Android Studio", "Firebase", "Firestore", "Figma", "Google API", "Maps", "Offline Mode", "Data Filters", "APIs"],
+      "coverImage": "/images/projects/feelin-cover.png",
+      "links": {
+        "live": "https://github.com/cmput301-w25/project-donotredeem/tree/main",
+        "github": "https://github.com/jayeshkumargoyal/DonotRedeem/tree/main"
+      },
+      "featured": false
+    }
+  ],
+
+  "// ===== SKILLS & EXPERTISE ===== //": "",
+  "skills": {
+    "languages": [
+      { "name": "Python", "badge": "Most used" },
+      { "name": "Java" },
+      { "name": "C" },
+      { "name": "C++" },
+      { "name": "SQL" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "Bash" }
+    ],
+    "frameworksLibraries": [
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "Node.js" },
+      { "name": "FastAPI" },
+      { "name": "scikit-learn" }
+    ],
+    "databasesDesign": [
+      { "name": "PostgreSQL" },
+      { "name": "MySQL" },
+      { "name": "MongoDB" },
+      { "name": "Firebase" },
+      { "name": "Firestore" },
+      { "name": "Figma" }
+    ],
+    "developerToolsPlatforms": [
+      { "name": "Git" },
+      { "name": "Docker" },
+      { "name": "Google Cloud Platform" },
+      { "name": "VS Code" },
+      { "name": "PyCharm" },
+      { "name": "Cursor" }
+    ],
+    "mlAi": [
+      { "name": "PyTorch" },
+      { "name": "OpenCV" },
+      { "name": "pandas" },
+      { "name": "NumPy" },
+      { "name": "Matplotlib" },
+      { "name": "Hugging Face Transformers" },
+      { "name": "LangGraph" },
+      { "name": "RAG" },
+      { "name": "ChromaDB" },
+      { "name": "Google Cloud Vertex AI" },
+      { "name": "OpenAI API" }
+    ]
+  },
+
+  "// ===== PAGE CONTENT ===== //": "",
+  "homePage": {
+    "hero": {
+      "eyebrow": "SHAPING THE FUTURE WITH CODE",
+      "title": "Software Engineer",
+      "subtitle": "Analyze • Build • Deploy",
+      "description": "I design and develop software and AI/ML systems with a focus on clarity, scalability, and real-world impact. From backend services to intelligent applications, I ship solutions that solve problems and deliver measurable results.",
+      "primaryButton": {
+        "text": "View Experience",
+        "action": "scroll"
+      },
+      "secondaryButton": {
+        "text": "Get In Touch",
+        "action": "contact"
+      }
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "title": "By the Numbers",
+      "subtitle": "A quick look at my professional journey and expertise.",
+      "stats": [
+        {
+          "value": "3+",
+          "label": "Years Experience"
+        },
+        {
+          "value": "5+",
+          "label": "Projects Delivered"
+        },
+        {
+          "value": "10+",
+          "label": "Technologies"
+        },
+        {
+          "value": "100%",
+          "label": "Client Satisfaction"
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Featured Work",
+      "title": "Recent Projects",
+      "subtitle": "A selection of my latest work showcasing AI, software, and research projects.",
+      "cta": {
+        "text": "View All Projects",
+        "link": "/work"
+      }
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "title": "Professional Journey",
+      "subtitle": "A glimpse into my career progression and key achievements.",
+      "cta": {
+        "text": "View Complete Experience",
+        "link": "/about"
+      }
+    },
+    "cta": {
+      "title": "💡 Let’s Build the Future Together",
+      "description": "Open to roles in software engineering, AI, and research. Excited to collaborate with teams that value innovation, learning, and impact.",
+      "primaryButton": {
+        "text": "Let's Connect",
+        "link": "/contact"
+      },
+      "secondaryButton": {
+        "text": "Learn More About Me",
+        "link": "/about"
+      }
+    }
+  },
+
+  "contactPage": {
+    "hero": {
+      "eyebrow": "GET IN TOUCH",
+      "title": "Contact",
+      "subtitle": "Excited to connect with recruiters and hiring managers to discuss opportunities, timelines, and fit."
+    },
+    "booking": {
+      "title": "Book a Meeting",
+      "subtitle": "Happy to walk through my background and how it matches your team’s needs.",
+      "buttonText": "Book Recruiter Call",
+      "link": "https://calendly.com/kumarjayesh012/30min"
+    },
+    "sections": {
+      "directContact": {
+        "title": "Direct Contact"
+      },
+      "location": {
+        "title": "Location",
+        "subtitle": "Based in Edmonton, AB · Open to remote and hybrid opportunities"
+      },
+      "social": {
+        "title": "Social Media"
+      },
+      "resume": {
+        "title": "Resume",
+        "viewText": "View Resume",
+        "downloadText": "Download PDF"
+      }
+    }
+  },
+
+  "workPage": {
+    "hero": {
+      "eyebrow": "Portfolio",
+      "title": "My Work",
+      "subtitle": "A selection of work highlighting my experience in software development, AI, and data-driven solutions."
+    },
+    "filters": [
+      "All Projects",
+      "Python",
+      "Java",
+      "React",
+      "APIs",
+      "SQL",
+      "Flask"
+    ]
+  },
+
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About Me",
+      "title": "Creative Developer",
+      "subtitle": "Ideas into execution",
+        "description": "With a background in software engineering and AI/ML research, I specialize in building systems that are both functional and human-centered. My work combines technical expertise with creativity, transforming ideas into scalable, accessible, and impactful digital experiences.",
+      "primaryButton": {
+        "text": "Download Resume",
+        "action": "download"
+      },
+      "secondaryButton": {
+        "text": "Get In Touch",
+        "action": "contact"
+      },
+      "image": "/images/avatar-about.png"
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "title": "Technical Expertise",
+      "subtitle": "A toolkit combining strong software engineering foundations with advanced AI/ML expertise."
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "title": "Professional Journey",
+      "subtitle": "My career path and the experiences that have shaped my expertise."
+    },
+    "volunteer": {
+      "eyebrow": "Volunteer",
+      "title": "Community Impact",
+      "subtitle": "Giving back to the community through volunteer work and social impact initiatives.",
+      "linkedinPost": "https://www.linkedin.com/feed/update/urn:li:activity:7332973869550526464/"
+    },
+    "values": {
+      "eyebrow": "Values",
+      "title": "What Drives Me",
+      "subtitle": "The principles and values that guide my work and decision-making process.",
+      "values": [
+        {
+          "title": "User-Centered Design",
+          "description": "Every decision is made with the end user in mind, ensuring intuitive and accessible experiences.",
+          "icon": "🎯"
+        },
+        {
+          "title": "Clean Code",
+          "description": "Writing maintainable, scalable code that other developers can easily understand and extend.",
+          "icon": "💻"
+        },
+        {
+          "title": "Continuous Learning",
+          "description": "Staying up-to-date with the latest technologies and best practices in AL/ML.",
+          "icon": "📚"
+        },
+        {
+          "title": "Collaboration",
+          "description": "Working closely with designers, product managers, and stakeholders to deliver exceptional results.",
+          "icon": "🤝"
+        },
+        {
+          "title": "Performance",
+          "description": "Optimizing for speed and efficiency to create fast, responsive applications.",
+          "icon": "⚡"
+        },
+        {
+          "title": "Innovation",
+          "description": "Exploring new technologies and approaches to solve complex problems creatively.",
+          "icon": "🚀"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Contribute on Day One",
+      "description": "Backend services, AI pipelines, and reliable shipping. Happy to walk through recent work and results.",
+      "primaryButton": {
+        "text": "Schedule Intro",
+        "link": "/contact"
+      },
+      "secondaryButton": {
+        "text": "View My Work",
+        "link": "/work"
+      }
+    }
+  },
+
+  "footer": {
+    "description": "Software and AI intern focused on real impact.",
+    "links": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Work",
+        "href": "/work"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Resume",
+        "href": "/resume.pdf",
+        "external": true
+      }
+    ],
+    "social": {
+      "github": "https://github.com/jayeshkumargoyal",
+      "linkedin": "https://linkedin.com/in/jayeshkumargoyal",
+      "calendly": "https://calendly.com/kumarjayesh012/30min"
+    },
+    "copyright": "© 2025 Jayesh Kumar Goyal. All rights reserved.",
+    "tagline": "Looking for Winter 2026 internships"
+  },
+
+  "// ===== ASSETS & RESOURCES ===== //": "",
+  "companyLogos": {
+    "pmassistant": "/images/companies/PM.png",
+    "universityAlberta": "/images/companies/uofa.png",
+    "universityAlbertaStudentsUnion": "/images/companies/uasu.png",
+    "cityofedmonton": "/images/companies/coe.png",
+    "amii": "/images/companies/amii.png",
+    "default": "/images/companies/default-logo.png"
+  }
+}

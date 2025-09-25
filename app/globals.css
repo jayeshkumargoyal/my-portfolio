@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+  
+  body {
+    @apply bg-base-black text-text-high font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-2 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent-orange/20;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-orange to-accent-blue bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+  
+  .magnetic-hover {
+    @apply transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-glow;
+  }
+  
+  .project-card {
+    @apply bg-surface-1/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden transition-all duration-500 hover:bg-surface-2/50 hover:border-accent-orange/20 hover:shadow-glow;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-orange to-accent-orange-emphasis text-base-black font-semibold px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-glow hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent-orange/50;
+  }
+  
+  .btn-secondary {
+    @apply border border-accent-orange text-accent-orange font-semibold px-6 py-3 rounded-xl transition-all duration-300 hover:bg-accent-orange hover:text-base-black focus:outline-none focus:ring-2 focus:ring-accent-orange/50;
+  }
+  
+  .section-header {
+    @apply text-4xl sm:text-5xl font-bold tracking-tight mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-text-muted mb-12 max-w-3xl mx-auto;
+  }
+  
+  .eyebrow {
+    @apply text-sm font-semibold text-accent-orange uppercase tracking-wider mb-2;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-stagger-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-stagger-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-stagger-3 {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
