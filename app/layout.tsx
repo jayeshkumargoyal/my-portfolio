@@ -6,7 +6,7 @@ import portfolioData from '@/data/portfolio.json';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://your-domain.com' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://my-portfolio-zeta-three-76.vercel.app' : 'http://localhost:3000'),
   title: portfolioData.meta.title,
   description: portfolioData.meta.description,
   keywords: portfolioData.meta.keywords,
