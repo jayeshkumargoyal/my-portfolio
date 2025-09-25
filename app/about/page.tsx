@@ -8,7 +8,7 @@ import SectionHeader from '@/components/UI/SectionHeader';
 import Badge from '@/components/UI/Badge';
 import Button from '@/components/UI/Button';
 import TagChip from '@/components/UI/TagChip';
-import { Download, MapPin, Mail, Github, Linkedin, Twitter, ExternalLink, Building2, GraduationCap, Users, Book, Boxes, Database, Wrench, Brain } from 'lucide-react';
+import { Download, MapPin, Mail, Github, Linkedin, ExternalLink, Building2, GraduationCap, Users, Book, Boxes, Database, Wrench, Brain } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 
 const AboutPage = () => {
@@ -17,7 +17,6 @@ const AboutPage = () => {
   const socialLinks = [
     { name: 'GitHub', href: profile.social.github, icon: Github },
     { name: 'LinkedIn', href: profile.social.linkedin, icon: Linkedin },
-    { name: 'Twitter', href: profile.social.twitter, icon: Twitter },
     { name: 'Email', href: `mailto:${profile.email}`, icon: Mail },
   ];
 
