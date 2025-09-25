@@ -17,20 +17,37 @@ export interface PortfolioData {
     social: {
       github: string;
       linkedin: string;
-      twitter: string;
-      dribbble: string;
     };
     avatar: string;
   };
   projects: Project[];
   skills: {
-    frontend: string[];
-    backend: string[];
-    mobile: string[];
-    design: string[];
-    tools: string[];
+    languages: SkillItem[];
+    frameworksLibraries: SkillItem[];
+    databasesDesign: SkillItem[];
+    developerToolsPlatforms: SkillItem[];
+    mlAi: SkillItem[];
   };
   timeline: TimelineEntry[];
+  companyLogos: {
+    pmassistant: string;
+    universityAlberta: string;
+    universityAlbertaStudentsUnion: string;
+    cityofedmonton: string;
+    amii: string;
+    default: string;
+  };
+  homePage: any;
+  aboutPage: any;
+  workPage: any;
+  contactPage: any;
+  footer: any;
+  volunteer: any;
+}
+
+export interface SkillItem {
+  name: string;
+  badge?: string;
 }
 
 export interface Project {
@@ -42,7 +59,7 @@ export interface Project {
   year: string;
   tags: string[];
   coverImage: string;
-  gallery: string[];
+  gallery?: string[];
   links: {
     live?: string;
     github?: string;
@@ -57,5 +74,6 @@ export interface TimelineEntry {
   shortDescription: string;
   description: string;
   highlights: string[];
+  featured: boolean;
 }
 

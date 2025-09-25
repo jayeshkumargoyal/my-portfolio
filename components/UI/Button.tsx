@@ -50,7 +50,7 @@ const Button = ({
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={onClick}
-        {...props}
+        {...(props as any)}
       >
         {children}
       </motion.button>

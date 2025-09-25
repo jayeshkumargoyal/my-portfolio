@@ -155,7 +155,7 @@ const AboutPage = () => {
                       >
                         <TagChip 
                           name={skill.name} 
-                          badge={skill.badge}
+                          badge={'badge' in skill ? skill.badge : undefined}
                           className={`${config.color} hover:scale-105 transition-transform duration-200`}
                         />
                       </motion.div>
@@ -277,9 +277,9 @@ const AboutPage = () => {
                 } else if (organization.toLowerCase().includes('city of edmonton') || organization.toLowerCase().includes('edmonton')) {
                   return companyLogos.cityofedmonton;
                 } else if (organization.toLowerCase().includes('code for good')) {
-                  return companyLogos.codeForGood;
+                  return companyLogos.default;
                 } else if (organization.toLowerCase().includes('university') && organization.toLowerCase().includes('outreach')) {
-                  return companyLogos.universityAlbertaOutreach;
+                  return companyLogos.default;
                 } else {
                   return companyLogos.default;
                 }
