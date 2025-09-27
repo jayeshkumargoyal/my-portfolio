@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,19 +8,33 @@ import { ArrowRight, Github, Linkedin, Mail, MapPin, Building2, GraduationCap, U
 import Layout from '@/components/Layout/Layout';
 import SectionHeader from '@/components/UI/SectionHeader';
 import ProjectCard from '@/components/UI/ProjectCard';
+import ProjectDetailModal from '@/components/UI/ProjectDetailModal';
 import Button from '@/components/UI/Button';
 import Badge from '@/components/UI/Badge';
 import portfolioData from '@/data/portfolio.json';
+import { Project } from '@/types/portfolio';
 
 const HomePage = () => {
   const { profile, projects, homePage, companyLogos } = portfolioData;
   const featuredProjects = projects.filter(project => project.featured);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const socialLinks = [
     { name: 'GitHub', href: profile.social.github, icon: Github },
     { name: 'LinkedIn', href: profile.social.linkedin, icon: Linkedin },
     { name: 'Email', href: `mailto:${profile.email}`, icon: Mail },
   ];
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <Layout>
@@ -136,7 +151,12 @@ const HomePage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             {featuredProjects.map((project, index) => (
-              <ProjectCard key={project.id} project={project} index={index} />
+              <ProjectCard 
+                key={project.id} 
+                project={project} 
+                index={index} 
+                onClick={() => handleProjectClick(project)}
+              />
             ))}
           </div>
           
@@ -303,6 +323,13 @@ const HomePage = () => {
           </motion.div>
         </div>
       </section>
+      
+      {/* Project Detail Modal */}
+      <ProjectDetailModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </Layout>
   );
 };

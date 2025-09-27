@@ -55,6 +55,21 @@ export interface Project {
   title: string;
   shortDescription: string;
   longDescription: string;
+  highlights?: string[];
+  challenges?: string[];
+  technologies?: {
+    frontend?: string[];
+    backend?: string[];
+    integrations?: string[];
+    deployment?: string[];
+    hardware?: string[];
+    apis?: string[];
+    algorithms?: string[];
+    data?: string[];
+    mobile?: string[];
+    design?: string[];
+  };
+  results?: string[];
   role: string;
   year: string;
   tags: string[];

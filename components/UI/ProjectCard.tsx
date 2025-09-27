@@ -8,15 +8,19 @@ import { Project } from '@/types/portfolio';
 interface ProjectCardProps {
   project: Project;
   index?: number;
+  onClick?: () => void;
 }
 
-const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
+const ProjectCard = ({ project, index = 0, onClick }: ProjectCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="project-card group"
+      className="project-card group cursor-pointer"
+      onClick={onClick}
+      whileHover={{ y: -5 }}
+      whileTap={{ scale: 0.98 }}
     >
       {/* Image */}
       <div className="relative overflow-hidden">
@@ -72,18 +76,14 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="View source code"
+                onClick={(e) => e.stopPropagation()}
               >
                 <Github size={16} />
               </motion.a>
             )}
-            <a
-              href={project.links.live || project.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent-orange hover:text-accent-orange-emphasis text-sm font-medium transition-colors duration-200"
-            >
+            <span className="text-accent-orange text-sm font-medium">
               View Details →
-            </a>
+            </span>
           </div>
         </div>
       </div>

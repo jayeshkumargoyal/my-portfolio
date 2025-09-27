@@ -5,12 +5,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Layout from '@/components/Layout/Layout';
 import SectionHeader from '@/components/UI/SectionHeader';
 import ProjectCard from '@/components/UI/ProjectCard';
+import ProjectDetailModal from '@/components/UI/ProjectDetailModal';
 import Badge from '@/components/UI/Badge';
 import portfolioData from '@/data/portfolio.json';
 import { Project } from '@/types/portfolio';
 
 const WorkPage = () => {
   const [filter, setFilter] = useState('All Projects');
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { projects, workPage } = portfolioData;
 
   const categories = workPage.filters;
@@ -79,6 +82,16 @@ const WorkPage = () => {
         return project.tags.includes(filter);
       });
 
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <Layout>
       <section className="section-padding">
@@ -128,7 +141,11 @@ const WorkPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <ProjectCard project={project} index={index} />
+                  <ProjectCard 
+                    project={project} 
+                    index={index} 
+                    onClick={() => handleProjectClick(project)}
+                  />
                 </motion.div>
               ))}
             </motion.div>
@@ -147,6 +164,13 @@ const WorkPage = () => {
           )}
         </div>
       </section>
+      
+      {/* Project Detail Modal */}
+      <ProjectDetailModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </Layout>
   );
 };
